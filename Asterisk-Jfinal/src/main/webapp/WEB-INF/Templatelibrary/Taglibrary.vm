@@ -1,0 +1,19 @@
+#****************************************************
+velocity标签库
+date： 2016/09/09
+****************************************************#
+##首页标签
+#set($config="Asterisk后台管理配置")   
+#set($extend="扩展功能")   
+#set($SIP="SIP配置") 
+#set($meetme="会议配置") 
+#set($meetme="会议配置")
+#set($Short="短息配置")
+##扩展功能标签
+#set($Template="模板配置")
+#macro(sipconfig $sip)
+#foreach($variable in $sip)
+$variable<input type="text" name="lname" />
+#end
+#end
+#set($variable1=["aaa", "bbb", "ccc","aaa", "bbb", "ccc","aaa", "bbb", "ccc","aaa", "bbb", "ccc"])
