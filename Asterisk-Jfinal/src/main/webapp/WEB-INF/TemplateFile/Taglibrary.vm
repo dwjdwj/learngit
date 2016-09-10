@@ -11,6 +11,8 @@ date： 2016/09/09
 #set($Short="短息配置")
 ##扩展功能标签
 #set($Template="模板配置")
+#****************************sip注册配置******************************#
+##配置表单
 #macro(sipconfig $sip)
 #foreach($variable in $sip)
 $variable<input type="text" name="lname" />
